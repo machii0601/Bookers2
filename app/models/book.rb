@@ -1,4 +1,4 @@
 class Book < ApplicationRecord
-
-  has_many :post_images, dependent: :destroy
+  has_one_attached :image
+  belongs_to :user, dependent: :destroy
 end
