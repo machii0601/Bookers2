@@ -1,4 +1,4 @@
-class PostImagesController < ApplicationController
+class BooksController < ApplicationController
   def new
   end
 
