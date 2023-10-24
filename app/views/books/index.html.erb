@@ -1,2 +1,9 @@
 <h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<% @users.each do |user| %>
+
+  <p>Users info</p>
+  <p>投稿ユーザー画像:<%= image_tag post_image.user.get_profile_image(100,100) %></p>
+  <p>New book</p>
+  <p>Users</p>
+  <p>Find me in app/views/books/index.html.erb</p>
+<% end %>
