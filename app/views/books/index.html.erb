@@ -1,4 +1,5 @@
 <h1>Books#index</h1>
+<table class="table table-striped">
 <%= form_with model: @book do |f| %>
   <h4>Title</h4>
   <%= f.text_field :title %>
@@ -10,11 +11,12 @@
   <%= f.submit 'Create Book' %>
 
 <% end %>
-<% @books.each do |book| %>
+
 
   <p>Users info</p>
-  <p>投稿ユーザー画像:<%= image_tag post_image.user.get_profile_image(100,100) %></p>
+  <!--<p>投稿ユーザー画像:<!%= image_tag @book.users get_profile_image(100,100) %></p>-->
   <p>New book</p>
   <p>Users</p>
   <p>Find me in app/views/books/index.html.erb</p>
-<% end %>
+
+
