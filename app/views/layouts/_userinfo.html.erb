@@ -4,7 +4,7 @@
 <table class="table">
   <tbody>
     <tr>
-  <%= image_tag @user.get_profile_image(100,100) %>
+  <%= image_tag user.get_profile_image(100,100) %>
 </tr>
     <tr>
       <th>name</th>
@@ -17,4 +17,6 @@
   </tbody>
 </table>
 
-<button type="button" class="btn btn-outline-secondary btn-block"><i class="fa-solid fa-user-gear"></i></button>
+<%= link_to edit_user_path(user.id), class: "btn btn-outline-secondary btn-block" do %>
+  <i class="fa-solid fa-user-gear"></i>
+<% end %>
